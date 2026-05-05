@@ -23,7 +23,7 @@ user_agent=$(get_random_user_agent)
 
 used_agent
 if [ -z $domain ]; then
-    echo "./webRecon <domain>"
+    echo "$0 <domain>"
 else
 
     code=1
