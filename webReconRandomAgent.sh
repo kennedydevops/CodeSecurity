@@ -31,7 +31,7 @@ else
     do
     sleep 2
     used_agent
-	response=$(curl -H "User-Agent:$user_agent" -s -o /dev/null -w "%{http_code}" https://$domain)
+	response=$(curl -H "User-Agent:$user_agent" -s -o /dev/null -w "%{http_code}" $domain)
     echo "$user_agent" + "$domain" = $response
      ((code++)) 
     done
